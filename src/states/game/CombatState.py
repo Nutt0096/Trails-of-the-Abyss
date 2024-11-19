@@ -156,7 +156,8 @@ class CombatState(BaseState):
                         result = apply_item_effect(item, target=current_character, coins=self.coins)
                     else:
                         result = apply_item_effect(item, target=current_character)
-    
+
+                    self.show_dialogue_char = result
                     print(result)
 
                     self.bought_items.pop(self.selected_item)
@@ -608,6 +609,7 @@ class CombatState(BaseState):
 
         if current_time - self.start_time >= self.text_display_time and self.show_text_char:
             self.show_text_char = False
+            self.show_dialogue_char = ""
         
         if current_time - self.start_time_mon >= 1000 and self.show_text_mon:
             self.show_text_mon = False
@@ -625,6 +627,7 @@ class CombatState(BaseState):
         if self.show_text_char:
             text = gFonts['M_small'].render(self.show_dialogue_char, True, self.RED)
             screen.blit(text, (WIDTH//4 + 50 - text.get_width()//2 , 15)) 
+
 
         if self.show_text_mon:
             text = gFonts['M_small'].render("All monsters Attack!", True, self.RED)
