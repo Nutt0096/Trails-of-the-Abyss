@@ -1,0 +1,830 @@
+{
+    "items": [
+        {
+            "name": "Item",
+            "description": "A description for an item",
+            "cost": 0,
+            "rarity": "common",
+            "on use": "Do something"
+        },
+        {
+            "name": "Gros Michel Banana",
+            "description": "It's nearly extinct and you still eat it",
+            "cost": 10,
+            "rarity": "common",
+            "on use": "1 in 12 chance to unlock Legendary banana (It not doing anything now)"
+        },
+        {
+            "name": "Healing Potion",
+            "description": "9 out of 10 doctor recommend this. Recover 1d8 HP",
+            "cost": 10,
+            "rarity": "common",
+            "on use": "Recover 1d8 HP"
+        },
+        {
+            "name": "Jimbo",
+            "description": "Laugh at you and add 4 damage to the next hit",
+            "cost": 10,
+            "rarity": "common",
+            "on use": "Next hit, add 4 damage"
+        },
+        {
+            "name": "Chocolate Cornet",
+            "description": "My hearts is Chocolate Cornet. Increase ACC by 1 for the next 2 rounds",
+            "cost": 20,
+            "rarity": "common",
+            "on use": "Increase ACC by 1"
+        },
+        {
+            "name": "Apple Juice",
+            "description": "That's not a apple juice. Recover 2d8 HP",
+            "cost": 20,
+            "rarity": "common",
+            "on use": "Recover 2d8 HP"
+        },
+        {
+            "name": "Coconut",
+            "description": "Kills more people than sharks. Recover 1d8 HP to all allies",
+            "cost": 20,
+            "rarity": "common",
+            "on use": "Recover 1d8 HP to all allies"
+        },
+        {
+            "name": "Watermelon",
+            "description": "Smash it at the beach. Recover 2d6 HP to all allies",
+            "cost": 30,
+            "rarity": "common",
+            "on use": "Recover 2d6 HP to all allies"
+        },
+        {
+            "name": "Ice Cream",
+            "description": "Why this does not melt yet?. Recover 20 Mana",
+            "cost": 20,
+            "rarity": "common",
+            "on use": "Recover 20 Mana"
+        },
+        {
+            "name": "A Broken Toaster",
+            "description": "Have you tried turning it off and on?, Deal 1d12 damage to a random enemy",
+            "cost": 10,
+            "rarity": "common",
+            "on use": "Deal 1d12 damage to a random enemy"
+        },
+        {
+            "name": "Hamburger",
+            "description": "Fully heals HP. Also boosts fatness",
+            "cost": 80,
+            "rarity": "rare",
+            "on use": "Fully recover HP"
+        },
+        {
+            "name": "Cupcake",
+            "description": "A substitute when we can't find a birthday cake. Recover 50 Mana",
+            "cost": 60,
+            "rarity": "rare",
+            "on use": "Recover 50 Mana"
+        },
+        {
+            "name": "Midas Bomb",
+            "description": "Deals 3d6 damage to enemy. If it died, gain 2d4*10 coins",
+            "cost": 60,
+            "rarity": "rare",
+            "on use": "Deals 3d6 damage to an enemy. If it died, gain 2d4*10 coins"
+        },
+        {
+            "name": "Emerald Splash",
+            "description": "No one can deflect the Emerald Splash. Deals 4d12 damage to enemy",
+            "cost": 80,
+            "rarity": "rare",
+            "on use": "Deals 4d12 damage to an enemy. Has 1 in 6 chance to deal on yourself"
+        },
+        {
+            "name": "John's Bible",
+            "description": "Make you immune from the next hit",
+            "cost": 80,
+            "rarity": "rare",
+            "on use": "Next incoming hit deals 0 damage"
+        },
+        {
+            "name": "Endless Eight",
+            "description": "Not interested in ordinary people. Deals 8d8 damage to enemy, Has 1 in 8 chance to deal additional 8d8",
+            "cost": 180,
+            "rarity": "legendary",
+            "on use": "Deals 8d8 damage to enemy. Has 1 in 8 chance to deal additional 8d8."
+        },
+        {
+            "name": "Pizza",
+            "description": "Hopes there are no pineapples come with it. Fully recover HP to all allies",
+            "cost": 160,
+            "rarity": "legendary",
+            "on use": "Fully recover HP to all allies"
+        }
+    ],
+    "weapons": [
+        {
+            "name": "weapon",
+            "description": "A description for an weapon",
+            "cost": 0,
+            "rarity": "common",
+            "special": "This is just a template",
+            "unlock": true,
+            "user": "",
+            "dice": "1d4",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Banana",
+            "description": "A completely normal banana.",
+            "cost": 10,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "dice": "1d4",
+            "modify stats": {
+                "STR": -1,
+                "ACC": -1
+            }
+        },
+        {
+            "name": "Toothpick",
+            "description": "For cleaner teeth",
+            "cost": 10,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "dice": "1d4",
+            "modify stats": {
+                "STR": -1,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Rune Blade",
+            "description": "An ancient blade with mysterious letters on it",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "knight",
+            "dice": "1d8",
+            "modify stats": {
+                "STR": 2,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Star Hammer",
+            "description": "Just a normal hammer. please don't expect it to have thunder or something",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "barbarian",
+            "dice": "1d12",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Morningstar",
+            "description": "Don't use in the afternoon",
+            "cost": 40,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "barbarian",
+            "dice": "3d4",
+            "modify stats": {
+                "STR": 3,
+                "ACC": 1
+            }
+        },
+        {
+            "name": "Hockey Stick",
+            "description": "Used by a Hockey pro, even though he wasn't even able to win the first round",
+            "cost": 20,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "knight",
+            "dice": "1d6",
+            "modify stats": {
+                "STR": 1,
+                "ACC": 1
+            }
+        },
+        {
+            "name": "Gun-blade",
+            "description": "With no ammo, it's just a normal blade",
+            "cost": 20,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "archer",
+            "dice": "2d4",
+            "modify stats": {
+                "STR": 3,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Guitar",
+            "description": "Make a nice sound when hit, even thought it doesn't do much damage",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "barbarian",
+            "dice": "2d6",
+            "modify stats": {
+                "STR": -1,
+                "ACC": 1
+            }
+        },
+        {
+            "name": "5G Tower",
+            "description": "Beware! The signal may cause stupid",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "barbarian",
+            "dice": "1d10",
+            "modify stats": {
+                "STR": 1,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Fairy Bow",
+            "description": "Made from a tree branch",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "archer",
+            "dice": "2d4",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 3
+            }
+        },
+        {
+            "name": "Crystal Bow",
+            "description": "The crystal are just for decoration",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "archer",
+            "dice": "1d8",
+            "modify stats": {
+                "STR": 2,
+                "ACC": 2
+            }
+        },
+    {
+            "name": "Eagle Eye",
+            "description": "High Accuracy, Just like an eagle",
+            "cost": 40,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "archer",
+            "dice": "1d6",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 5
+            }
+        },
+        {
+            "name": "Heaven's Gate",
+            "description": "A Swords from heaven",
+            "cost": 80,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "knight",
+            "dice": "2d10",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 3
+            }
+        },
+        {
+            "name": "Devil's Sunrise",
+            "description": "Defeat a villain by becoming a villain",
+            "cost": 60,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "barbarian",
+            "dice": "2d8",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Equilibrium",
+            "description": "A better Rune Blade",
+            "cost": 70,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "knight",
+            "dice": "3d6",
+            "modify stats": {
+                "STR": 4,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Honjo Masamune",
+            "description": "From the greatest swordsmith in all of Japan",
+            "cost": 70,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "knight",
+            "dice": "3d6",
+            "modify stats": {
+                "STR": 4,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Angel Wing",
+            "description": "A gift from the angels",
+            "cost": 60,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "archer",
+            "dice": "2d10",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 4
+            }
+        },
+        {
+            "name": "Iron 'Wand'?",
+            "description": "Behold my magic!! *Punch*",
+            "cost": 50,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "dice": "1d12",
+            "modify stats": {
+                "STR": -1,
+                "ACC": 6
+            }
+        },
+        {
+            "name": "Father's business card",
+            "description": "Show to your enemy and make them knows their place",
+            "cost": 50,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "dice": "1d12",
+            "modify stats": {
+                "STR": 4,
+                "ACC": -1
+            }
+        },
+        {
+            "name": "Legendary Cavendish Banana",
+            "description": "A legendary Cavendish banana with high potassium.",
+            "cost": 150,
+            "rarity": "legendary",
+            "special": "",
+            "unlock": false,
+            "user": "barbarian",
+            "dice": "1d20",
+            "modify stats": {
+                "STR": 8,
+                "ACC": 8
+            }
+        },
+        {
+            "name": "Gungnir",
+            "description": "The spear of the god Odin",
+            "cost": 150,
+            "rarity": "legendary",
+            "special": "",
+            "unlock": false,
+            "user": "knight",
+            "dice": "3d12",
+            "modify stats": {
+                "STR": 1,
+                "ACC": 9
+            }
+        },
+        {
+            "name": "Sharanga",
+            "description": "The celestial bow of the god Vishnu",
+            "cost": 150,
+            "rarity": "legendary",
+            "special": "",
+            "unlock": false,
+            "user": "archer",
+            "dice": "6d6",
+            "modify stats": {
+                "STR": 0,
+                "ACC": 10
+            }
+        }
+    ],
+    "spells": [
+        {
+            "name": "spell",
+            "description": "A description for an spell",
+            "cost": 0,
+            "rarity": "common",
+            "special": "This is just a template",
+            "unlock": true,
+            "user": "",
+            "mana": 0,
+            "dice": "d4",
+            "modify stats": {
+                "INT": 0,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Fireball",
+            "description": "A ball of fire",
+            "cost": 20,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "mana": 5,
+            "dice": "2d4",
+            "modify stats": {
+                "INT": 3,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Thunderbolt",
+            "description": "Flying kite with Benjamin Fr*nklin",
+            "cost": 20,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "mana": 5,
+            "dice": "2d4",
+            "modify stats": {
+                "INT": 1,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Iceshard",
+            "description": "Better with chocolate syrup",
+            "cost": 20,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "mana": 5,
+            "dice": "2d4",
+            "modify stats": {
+                "INT": 2,
+                "ACC": 1
+            }
+        },
+        {
+            "name": "Vicious Mockery",
+            "description": "Deliver your enemy a maximum emotional damage",
+            "cost": 10,
+            "rarity": "common",
+            "special": "1 in 24 chance to make enemy surender",
+            "unlock": true,
+            "user": "sorcerer",
+            "mana": 5,
+            "dice": "1d4",
+            "modify stats": {
+                "INT": 1,
+                "ACC": 1
+            }
+        },
+        {
+            "name": "Acid Blast",
+            "description": "Turn litmus paper red",
+            "cost": 20,
+            "rarity": "common",
+            "special": "Inflict Poison to enemy",
+            "unlock": true,
+            "user": "sorcerer",
+            "mana": 5,
+            "dice": "1d4",
+            "modify stats": {
+                "INT": 1,
+                "ACC": 1
+            }
+        },
+        {
+            "name": "Plasma Wave",
+            "description": "Protip: You can make plasma by microwaving fire! But don't try that at home.",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "mana": 5,
+            "dice": "1d8",
+            "modify stats": {
+                "INT": 2,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Energy Bomb",
+            "description": "The law of conservation of energy stills apply",
+            "cost": 40,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "mana": 5,
+            "dice": "1d10",
+            "modify stats": {
+                "INT": 1,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Pulsar",
+            "description": "The ball of darkness that will consume you. Works the same as adulthood",
+            "cost": 50,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "mana": 10,
+            "dice": "3d6",
+            "modify stats": {
+                "INT": 3,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Gravity Surge",
+            "description": "Make them heavier, just like their mom",
+            "cost": 70,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "mana": 10,
+            "dice": "7d4",
+            "modify stats": {
+                "INT": 3,
+                "ACC": 3
+            }
+        },
+        {
+            "name": "Rainbow Blast",
+            "description": "Using this in art class may also works",
+            "cost": 60,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "mana": 10,
+            "dice": "3d8",
+            "modify stats": {
+                "INT": 4,
+                "ACC": 2
+            }
+        },
+        {
+            "name": "Life Drain",
+            "description": "Recover HP by damage done. Beware if you and the target have different blood types",
+            "cost": 60,
+            "rarity": "rare",
+            "special": "Recover HP by damage done",
+            "unlock": true,
+            "user": "mage",
+            "mana": 10,
+            "dice": "2d6",
+            "modify stats": {
+                "INT": 0,
+                "ACC": 0
+            }
+        },
+        {
+            "name": "Glass Cannon",
+            "description": "Low Accuracy",
+            "cost": 70,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "mana": 10,
+            "dice": "2d12",
+            "modify stats": {
+                "INT": 6,
+                "ACC": -3
+            }
+        },
+        {
+            "name": "Genesis",
+            "description": "\"May there be mercy on man and machine for their sins.\"",
+            "cost": 100,
+            "rarity": "legendary",
+            "special": "",
+            "unlock": false,
+            "user": "mage",
+            "mana": 20,
+            "dice": "3d12",
+            "modify stats": {
+                "INT": 2,
+                "ACC": 8
+            }
+        },
+        {
+            "name": "Road Roller",
+            "description": "\"Wryyyyyyyyyyyyyyyyyyyyyy!!!!!!!!!\"",
+            "cost": 100,
+            "rarity": "legendary",
+            "special": "",
+            "unlock": false,
+            "user": "sorcerer",
+            "mana": 20,
+            "dice": "5d6",
+            "modify stats": {
+                "INT": 8,
+                "ACC": 1
+            }
+        }
+    ],
+    "armors": [
+        {
+            "name": "armor",
+            "description": "A description for an armor",
+            "cost": 0,
+            "rarity": "common",
+            "special": "This is just a template",
+            "unlock": true,
+            "user": "",
+            "modify stats": {
+                "CON": 0,
+                "DEF": 0,
+                "CHA": 0
+            }
+        },
+        {
+            "name": "Adventurer Clothes",
+            "description": "Basic cloth for everyone",
+            "cost": 20,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "barbarian",
+            "modify stats": {
+                "CON": 1,
+                "DEF": 1,
+                "CHA": 0
+            }
+        },
+        {
+            "name": "Knight Armor",
+            "description": "Great defence",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "knight",
+            "modify stats": {
+                "CON": 2,
+                "DEF": 2,
+                "CHA": -1
+            }
+        },
+        {
+            "name": "Maid Outfit",
+            "description": "Can make your house clean",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "modify stats": {
+                "CON": 1,
+                "DEF": 0,
+                "CHA": 2
+            }
+        },
+        {
+            "name": "Jirai Kei Dress",
+            "description": "Dangerous, but I like it",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "archer",
+            "modify stats": {
+                "CON": 1,
+                "DEF": 1,
+                "CHA": 1
+            }
+        },
+        {
+            "name": "Wizard Robe",
+            "description": "The pyjamas of a wizard",
+            "cost": 30,
+            "rarity": "common",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "modify stats": {
+                "CON": 0,
+                "DEF": 0,
+                "CHA": 3
+            }
+        },
+        {
+            "name": "Ninja Cloak",
+            "description": "You'll never get hit",
+            "cost": 50,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "archer",
+            "modify stats": {
+                "CON": 0,
+                "DEF": 5,
+                "CHA": 0
+            }
+        },
+        {
+            "name": "Priest's Tunic",
+            "description": "The clothes of a holy knight",
+            "cost": 40,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "mage",
+            "modify stats": {
+                "CON": 1,
+                "DEF": -1,
+                "CHA": 3
+            }
+        },
+        {
+            "name": "Banana Suit",
+            "description": "Become a banana and slips on a man",
+            "cost": 40,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "knight",
+            "modify stats": {
+                "CON": 2,
+                "DEF": 3,
+                "CHA": -1
+            }
+        },
+        {
+            "name": "Pek*ra's wig and clothes",
+            "description": "Let's just pretend I'm still Pek*ra.",
+            "cost": 50,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "sorcerer",
+            "modify stats": {
+                "CON": 0,
+                "DEF": 0,
+                "CHA": 5
+            }
+        },
+        {
+            "name": "Hobo Clothes",
+            "description": "Become a hobo!",
+            "cost": 50,
+            "rarity": "rare",
+            "special": "",
+            "unlock": true,
+            "user": "barbarian",
+            "modify stats": {
+                "CON": 6,
+                "DEF": 2,
+                "CHA": -3
+            }
+        }
+    ]
+}
